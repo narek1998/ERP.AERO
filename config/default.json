@@ -1,0 +1,26 @@
+{
+  "app": {
+    "http": {
+      "port": 3001
+    }
+  },
+  "service": {
+    "jwt": {
+      "access_secret": "jwt-secret-key",
+      "refresh_secret": "jwt-refresh-secret-key",
+      "extraOptions": {
+        "shortExpiresIn": "10 m",
+        "longExpiresIn": "1h"
+      }
+    }
+  },
+  "db": {
+    "mysql": {
+      "host": "localhost",
+      "user": "root",
+      "password": "",
+      "port": "3306",
+      "database": "erp_areo_test"
+    }
+  }
+}
